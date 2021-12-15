@@ -11,13 +11,80 @@ html {
 
 body {
     max-width: 1024px;
+    margin: 0 auto;
 }
 
+header {
+    height: 100px;
+}
 
+.intestazione {
+    background-color: lightpink;
+}
 
+.first__container {
+    height: 500px;
+    margin-top: 15px;
+    background-color: rgb(224, 224, 46);
+    
+}
 
+.second__container {
+    height: 600px;
+    margin-top: 15px;
+    position: relative;
+    background-color: rgb(54, 54, 209);
+    
+}
 
+.content__title {
+    height: 100px;
+    
+    visibility: visible;
+    width: 100%;
+    background-color: lightskyblue;
+}
 
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+.col {
+    float: left;
+    margin-top: 7px;
+    margin-left: 10px;
+    
+    
+}
+
+.content { 
+    height: 480px;
+    width: calc(100% - 270px - 270px);
+    
+    float: left;
+    
+    background-color: lightskyblue;
+    
+    
+}
+
+.side {
+    
+    height: 480px;
+    width: 250px;
+    float: left;
+    background-color: lightskyblue;
+
+}
+
+.foot {
+    height: 50px;
+    background-color: purple;
+    margin-top: 15px;
+}
 
 
 
@@ -29,6 +96,22 @@ body {
 
 /* DEBUG */
 
-.debug .intestazione{
-background-color: lightpink;
+.debug .intestazione {
+    background-color: lightpink;
+    border: 2px dashed black;
+}
+
+.debug main div.first__container {
+    background-color: rgb(224, 224, 46);
+    border: 2px dashed black;
+}
+
+.debug main div.second__container {
+    background-color: rgb(54, 54, 209);
+    border: 2px dashed black;
+}
+
+.debug .content__title, .debug .side, .debug .content {
+    background-color: lightskyblue;
+    border: 2px dashed black;
 }
